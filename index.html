@@ -32,6 +32,8 @@ main>div {
 
 	<main>
     <video
+      width="500"
+      height="500"
       muted=""
       autoplay
       id="my-player"
@@ -39,15 +41,23 @@ main>div {
       controls
       preload="auto"
       data-setup='{}'>
-      <source src="./hls/1196316rB08hUZwy.m3u8" type="application/x-mpegURL"></source>
+      <source src="rtmp://127.0.0.1/z/s" type="rtmp/flv"></source>
+      <!--
+      <source src="./hls/s.m3u8" type="application/x-mpegURL"></source>
+      -->
     </video>
 	</main>
 
 	<footer>
 	</footer>
 
-	<script src=""></script>
 <script src="//vjs.zencdn.net/7.8.2/video.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+<!--
+<script>
+  var player = videojs('my-player');
+</script>
+-->
 
 	<noscript></noscript>
 </body>
